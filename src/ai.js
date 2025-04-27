@@ -1,4 +1,7 @@
-const API_URL = '/api/chat'
+const API_URL = process.env.NODE_ENV === 'production' 
+                ? 'https://leftovers-recipe-app.vercel.app/api/chat' 
+                : '/api/chat'
+
 export async function getRecipeFromLlama(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
     try {

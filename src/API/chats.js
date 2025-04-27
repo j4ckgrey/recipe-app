@@ -43,7 +43,6 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: 'Server error' })
         }
     } else {
-        // Handle any other HTTP methods (e.g., GET)
         return res.status(405).json({ error: 'Method Not Allowed' })
     }
 }
