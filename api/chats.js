@@ -35,7 +35,7 @@ export default async function handler(req, res) {
                     ],
                     max_tokens: 1024,
                 })
-            });
+            })
 
             const data = await response.json()
             console.log("OpenRouter response:", data)
