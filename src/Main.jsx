@@ -1,4 +1,3 @@
-//import 'dotenv/config'
 import React from "react"
 import IngredientsList from "./components/IngredientsList"
 import ClaudeRecipe from "./components/ClaudeRecipe"
@@ -40,10 +39,12 @@ export default function Main() {
                     ingredients={ingredients}
                     getRecipe={getRecipe}
                 />}
-            
-
-            {recipe && <ClaudeRecipe recipe={recipe} />}
-            {recipe && <button className="get-recipe-container button" onClick={resetPage}>New Recipe</button>}
+            {recipe &&
+                <>
+                    <ClaudeRecipe recipe={recipe} />
+                    <button className="new-recipe" onClick={resetPage}>New Recipe</button>
+                </>
+            }
         </main>
     )
 }
