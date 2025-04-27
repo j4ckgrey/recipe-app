@@ -24,7 +24,7 @@ export default function Main() {
 
     return (
         <main>
-            <form action={addIngredient} className="add-ingredient-form">
+            {!recipe && <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
                     placeholder="e.g. oregano"
@@ -32,7 +32,7 @@ export default function Main() {
                     name="ingredient"
                 />
                 <button>Add ingredient</button>
-            </form>
+            </form>}
 
             
                 {!recipe && <IngredientsList
