@@ -31,7 +31,7 @@ export default async function handler(req, res) {
                 headers: {
                     "Authorization": `Bearer ${API_KEY}`,
                     "Content-Type": "application/json",
-                    "HTTP-Referer": "https://leftovers-recipe-app.vercel.app",
+                    "HTTP-Referer": "https://leftovers-app.vercel.app",
                     "X-Title": "ChefApp"
                 },
                 body: JSON.stringify({
