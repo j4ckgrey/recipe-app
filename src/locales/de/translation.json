@@ -1,0 +1,14 @@
+{
+    "placeholder_add_ingredient": "z.B. Oregano",
+    "aria_add_ingredient": "Zutat hinzufügen",
+    "button_add_ingredient": "Zutat hinzufügen",
+    "button_new_recipe": "Neues Rezept",
+    "chef_recommends": "Der Koch Empfiehlt",
+    "ready_for_recipe": "Bereit für ein Rezept?",
+    "generate_recipe": "Generiere ein Rezept aus deiner Zutatenliste.",
+    "get_recipe": "Rezept erhalten",
+    "enter_4_ingredients": "Gib mindestens 4 Zutaten ein, um zu beginnen",
+    "ingredients_on_hand": "Verfügbare Zutaten:",
+    "jack_leftovers_chef": "Jack: Restekoch"
+  }
+  

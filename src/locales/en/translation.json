@@ -1,0 +1,13 @@
+{
+  "placeholder_add_ingredient": "e.g. oregano",
+  "aria_add_ingredient": "Add ingredient",
+  "button_add_ingredient": "Add ingredient",
+  "button_new_recipe": "New Recipe",
+  "chef_recommends": "Chef Recommends",
+  "ready_for_recipe": "Ready for a recipe?",
+  "generate_recipe": "Generate a recipe from your list of ingredients.",
+  "get_recipe": "Get a recipe",
+  "enter_4_ingredients": "Enter at least 4 ingredients to start",
+  "ingredients_on_hand": "Ingredients on hand:",
+  "jack_leftovers_chef": "Jack: Leftovers Chef"
+}

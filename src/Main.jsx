@@ -1,14 +1,18 @@
+import './i18n'
+import { useTranslation } from "react-i18next"
 import React from "react"
 import IngredientsList from "./components/IngredientsList"
 import ClaudeRecipe from "./components/ClaudeRecipe"
 import { getRecipeFromLlama } from "./ai"
 
-export default function Main() {
+export default function Main(props) {
+    const { t } = useTranslation()
+
     const [ingredients, setIngredients] = React.useState([])
     const [recipe, setRecipe] = React.useState("")
 
     async function getRecipe() {
-        const recipeMarkdown = await getRecipeFromLlama(ingredients)
+        const recipeMarkdown = await getRecipeFromLlama(ingredients, props.language)
         setRecipe(recipeMarkdown)
     }
 
@@ -27,11 +31,11 @@ export default function Main() {
             {!recipe && <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
-                    placeholder="e.g. oregano"
-                    aria-label="Add ingredient"
+                    placeholder={t("placeholder_add_ingredient")}
+                    aria-label={t("aria_add_ingredient")}
                     name="ingredient"
                 />
-                <button>Add ingredient</button>
+                <button>{t("button_add_ingredient")}</button>
             </form>}
 
             
@@ -42,7 +46,7 @@ export default function Main() {
             {recipe &&
                 <>
                     <ClaudeRecipe recipe={recipe} />
-                    <button className="new-recipe" onClick={resetPage}>New Recipe</button>
+                    <button className="new-recipe" onClick={resetPage}>{t("button_new_recipe")}</button>
                 </>
             }
         </main>

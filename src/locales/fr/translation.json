@@ -1,0 +1,14 @@
+{
+    "placeholder_add_ingredient": "par exemple origan",
+    "aria_add_ingredient": "Ajouter un ingrédient",
+    "button_add_ingredient": "Ajouter un ingrédient",
+    "button_new_recipe": "Nouvelle recette",
+    "chef_recommends": "Le Chef Recommande",
+    "ready_for_recipe": "Prêt pour une recette ?",
+    "generate_recipe": "Générez une recette à partir de votre liste d'ingrédients.",
+    "get_recipe": "Obtenir une recette",
+    "enter_4_ingredients": "Entrez au moins 4 ingrédients pour commencer",
+    "ingredients_on_hand": "Ingrédients disponibles:",
+    "jack_leftovers_chef": "Jack: Chef des Restes"
+  }
+  

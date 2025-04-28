@@ -1,0 +1,13 @@
+{
+  "placeholder_add_ingredient": "por ejemplo orégano",
+  "aria_add_ingredient": "Agregar ingrediente",
+  "button_add_ingredient": "Agregar ingrediente",
+  "button_new_recipe": "Nueva receta",
+  "chef_recommends": "El Chef Recomienda",
+  "ready_for_recipe": "¿Listo para una receta?",
+  "generate_recipe": "Genera una receta a partir de tu lista de ingredientes.",
+  "get_recipe": "Obtener una receta",
+  "enter_4_ingredients": "Ingresa al menos 4 ingredientes para comenzar",
+  "ingredients_on_hand": "Ingredientes disponibles:",
+  "jack_leftovers_chef": "Jack: Chef de Sobras"
+}

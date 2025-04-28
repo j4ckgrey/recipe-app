@@ -2,7 +2,7 @@ const API_URL = process.env.NODE_ENV === 'production'
                 ? 'https://leftovers-app.vercel.app/api/chats' 
                 : '/api/chats'
 
-export async function getRecipeFromLlama(ingredientsArr) {
+export async function getRecipeFromLlama(ingredientsArr, language) {
     const ingredientsString = ingredientsArr.join(", ")
     try {
         const response = await fetch(API_URL, {
@@ -11,7 +11,8 @@ export async function getRecipeFromLlama(ingredientsArr) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                ingredients: ingredientsArr
+                ingredients: ingredientsArr,
+                language: language
             })
         });
 
