@@ -15,7 +15,7 @@ export default function App() {
   return (
     <>
       <Header selectedLanguage={language} handleLanguageChange={handleLanguageChange} />
-      <Main />
+      <Main language={language} />
     </>
   )
 }

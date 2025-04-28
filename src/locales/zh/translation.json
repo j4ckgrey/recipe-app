@@ -9,6 +9,7 @@
     "get_recipe": "获取食谱",
     "enter_4_ingredients": "输入至少4个配料以开始",
     "ingredients_on_hand": "手头的配料：",
-    "jack_leftovers_chef": "Jack: 剩菜厨师"
+    "jack_leftovers_chef": "Jack: 剩菜厨师",
+    "content": "我有{{ingredientsString}}。请给我一个你推荐我做的食谱！"
   }
   

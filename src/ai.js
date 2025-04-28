@@ -1,9 +1,8 @@
 const API_URL = process.env.NODE_ENV === 'production' 
-                ? 'https://leftovers-app.vercel.app/api/chats' 
-                : '/api/chats'
+    ? 'https://leftovers-app.vercel.app/api/chats' 
+    : 'http://localhost:3000/api/chats';
 
 export async function getRecipeFromLlama(ingredientsArr, language) {
-    const ingredientsString = ingredientsArr.join(", ")
     try {
         const response = await fetch(API_URL, {
             method: "POST",
@@ -11,7 +10,7 @@ export async function getRecipeFromLlama(ingredientsArr, language) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                ingredients: ingredientsString,
+                ingredients: ingredientsArr,
                 language: language
             })
         });

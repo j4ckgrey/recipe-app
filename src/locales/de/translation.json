@@ -9,6 +9,7 @@
     "get_recipe": "Rezept erhalten",
     "enter_4_ingredients": "Gib mindestens 4 Zutaten ein, um zu beginnen",
     "ingredients_on_hand": "Verfügbare Zutaten:",
-    "jack_leftovers_chef": "Jack: Restekoch"
+    "jack_leftovers_chef": "Jack: Restekoch",
+    "content": "Ich habe {{ingredientsString}}. Bitte gib mir ein Rezept, das du mir empfehlen würdest!"
   }
   

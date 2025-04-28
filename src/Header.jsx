@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next"
 
 export default function Header(props) {
     const { t } = useTranslation();
-
     return (
         <header>
             <div className="header-center">
