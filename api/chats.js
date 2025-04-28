@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
     if (req.method === 'POST') {
-        const { ingredients, language = 'en' } = req.body
+        const { ingredients, language = 'en' } = req.body || 'en'
         const ingredientsString = ingredients.join(', ')
 
         const API_KEY = process.env.REACT_APP_API_KEY
