@@ -18,11 +18,11 @@ export default async function handler(req, res) {
 
     if (req.method === 'POST') {
         const { ingredients, language = 'en' } = req.body
-        const ingredientsString = ingredientsArr.join(', ')
+        const ingredientsString = ingredients.join(', ')
 
         const API_KEY = process.env.REACT_APP_API_KEY
 
-        console.log("Request received with ingredients:", ingredientsArr)
+        console.log("Request received with ingredients:", ingredients)
         console.log("Selected language:", language)
 
         try {
