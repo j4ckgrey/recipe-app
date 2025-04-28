@@ -9,11 +9,10 @@ export default function Main(props) {
     const { t } = useTranslation()
 
     const [ingredients, setIngredients] = React.useState([])
-    const [recipe, setRecipe] = React.useState("")
 
     async function getRecipe() {
         const recipeMarkdown = await getRecipeFromLlama(ingredients, props.language)
-        setRecipe(recipeMarkdown)
+        props.setRecipe(recipeMarkdown)
     }
 
     function addIngredient(formData) {
@@ -23,12 +22,12 @@ export default function Main(props) {
 
     function resetPage() {
         setIngredients([])
-        setRecipe("")
+        props.setRecipe("")
     }
 
     return (
         <main>
-            {!recipe && <form action={addIngredient} className="add-ingredient-form">
+            {!props.recipe && <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
                     placeholder={t("placeholder_add_ingredient")}
@@ -39,13 +38,13 @@ export default function Main(props) {
             </form>}
 
             
-                {!recipe && <IngredientsList
+                {!props.recipe && <IngredientsList
                     ingredients={ingredients}
                     getRecipe={getRecipe}
                 />}
-            {recipe &&
+            {props.recipe &&
                 <>
-                    <ClaudeRecipe recipe={recipe} />
+                    <ClaudeRecipe recipe={props.recipe} />
                     <button className="new-recipe" onClick={resetPage}>{t("button_new_recipe")}</button>
                 </>
             }

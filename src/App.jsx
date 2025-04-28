@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 
 export default function App() {
   const [language, setLanguage] = React.useState("en")
+  const [recipe, setRecipe] = React.useState("")
   const { i18n } = useTranslation()
   
   function handleLanguageChange(selectedLanguage) {
@@ -14,8 +15,8 @@ export default function App() {
   }
   return (
     <>
-      <Header selectedLanguage={language} handleLanguageChange={handleLanguageChange} />
-      <Main language={language} />
+      <Header selectedLanguage={language} handleLanguageChange={handleLanguageChange} recipe={recipe} />
+      <Main language={language} setRecipe={setRecipe} recipe={recipe} />
     </>
   )
 }

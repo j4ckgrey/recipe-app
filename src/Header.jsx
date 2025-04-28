@@ -9,7 +9,7 @@ export default function Header(props) {
                 <img src={chefClaudeLogo}/>
                 <h1>{t("jack_leftovers_chef")}</h1>
             </div>
-            <select className="language-select" value={props.selectedLanguage} onChange={(e) => props.handleLanguageChange(e.target.value)}>
+            <select disabled={props.recipe} className="language-select" value={props.selectedLanguage} onChange={(e) => props.handleLanguageChange(e.target.value)}>
                 <option value="en">English</option>
                 <option value="es">Español</option>
                 <option value="fr">Français</option>
