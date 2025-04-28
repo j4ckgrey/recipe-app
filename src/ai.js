@@ -11,7 +11,7 @@ export async function getRecipeFromLlama(ingredientsArr, language) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                ingredients: ingredientsArr,
+                ingredients: ingredientsString,
                 language: language
             })
         });
