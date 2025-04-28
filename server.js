@@ -54,7 +54,7 @@ app.post('/api/chats', async (req, res) => {
                 "X-Title": "ChefApp"
             },
             body: JSON.stringify({
-                model: "tngtech/deepseek-r1t-chimera:free",
+                model: "mistralai/mistral-7b-instruct:free",
                 messages: [
                     { role: "system", content: SYSTEM_PROMPT[language] || SYSTEM_PROMPT.en },
                     { role: "user", content: prompt[language]},

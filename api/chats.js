@@ -37,7 +37,7 @@ export default async function handler(req, res) {
           "X-Title": "ChefApp"
         },
         body: JSON.stringify({
-          model: "tngtech/deepseek-r1t-chimera:free",
+          model: "mistralai/mistral-7b-instruct:free",
           messages: [
             { role: "system", content: SYSTEM_PROMPT[language] },
             { role: "user", content: prompt[language] },
